@@ -56,19 +56,19 @@ export default function Uses() {
           </Tool>
           <Tool title="Keychron K6 Keyboard">
             I have a fully customised back keyboard with Golden Yellow Gateron Switches and a Custom Keycap of a dumpling that reminds me of my girl.
-            It's not just a keyboard—it's a little piece of comfort in my workflow.
+            It&apos;s not just a keyboard—it&apos;s a little piece of comfort in my workflow.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Development tools">
           <Tool title="VS Code">
-          It's like the Swiss Army knife of coding—lightweight, customizable, and ready for anything.
+          It&apos;s like the Swiss Army knife of coding—lightweight, customizable, and ready for anything.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Design">
           <Tool title="Figma">
           Figma is where most of my ideas take shape before they ever touch code. 
-          Whether it's wireframing user flows, prototyping interactions, 
-          or collaborating in real time, it's become an essential part of how I build.
+          Whether it&apos;s wireframing user flows, prototyping interactions, 
+          or collaborating in real time, it&apos;s become an essential part of how I build.
           Fun fact: the little character and garden map on my About page? Yep, all built in Figma.
           </Tool>
         </ToolsSection>
@@ -78,7 +78,7 @@ export default function Uses() {
             It was the first deck of cards I bought to learn that shuffle.
           </Tool>
           <Tool title="Memento Mori by Chris Ramsay">
-            Memento Mori - "Remember your mortality"
+            Memento Mori - &quot;Remember your mortality&quot;
             I learnt everything Chris Ramsay taught and I got his first deck of playing cards. I love them.
           </Tool>
           <Tool title="DKNG Red Wheels">

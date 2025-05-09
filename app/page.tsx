@@ -26,9 +26,9 @@ export default function Home() {
             Software developer, ui/ux enthusiast and amateur cardist.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Sumedh, a full-stack software developer based in Toronto, ON. I enjoy combining packets in 
+            I&apos;m Sumedh, a full-stack software developer based in Toronto, ON. I enjoy combining packets in 
             cardistry or components in development—making them work seamlessly together and optimizing where 
-            it's needed for maximum impact.
+            it&apos;s needed for maximum impact.
           </p>
           <div className="mt-6 flex gap-6">
             <div className="relative w-6 h-6">

@@ -57,13 +57,13 @@ interface Role {
   end: string | { label: string; dateTime: string }
 }
 function Role({ role }: { role: Role }) {
-  let startLabel =
+  const startLabel =
     typeof role.start === 'string' ? role.start : role.start.label
-  let startDate =
+  const startDate =
     typeof role.start === 'string' ? role.start : role.start.dateTime
 
-  let endLabel = typeof role.end === 'string' ? role.end : role.end.label
-  let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
+  const endLabel = typeof role.end === 'string' ? role.end : role.end.label
+  const endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
 
   return (
     <li className="flex gap-4">
@@ -94,7 +94,7 @@ function Role({ role }: { role: Role }) {
 }
 
 function Resume() {
-  let resume: Array<Role> = [
+  const resume: Array<Role> = [
     {
       company: 'GlamPRO',
       title: 'Mobile Developer - Intern',
@@ -161,32 +161,32 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I'm Sumedh Udar. I live in Toronto.
+            I&apos;m Sumedh Udar. I live in Toronto.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              When I was 6, my mom — who helped with accounting at my dad's software company — 
+              When I was 6, my mom — who helped with accounting at my dad&apos;s software company — 
               sat me down in front of a clunky CRT monitor running Windows 3.1. She opened a game 
-              called Chip's Challenge to keep me entertained while she worked. That was my first 
+              called Chip&apos;s Challenge to keep me entertained while she worked. That was my first 
               time using a computer, and I was instantly hooked.<span className='bg-neutral-100 dark:bg-neutral-800 px-1 py-0.5'>I have provided a visual representation of me before she made me sit in front of the computer.</span>
             </p>
             <p>
               From there, I fell in love with computer games. My childhood was filled with long sessions of 
               Pokémon, Sonic, and Tetris — sometimes playing, sometimes just trying to figure out how the games 
-              worked. I didn't know it then, but that curiosity would stick with me.
+              worked. I didn&apos;t know it then, but that curiosity would stick with me.
             </p>
             <p>
-              When I enrolled in Computer Engineering, I didn't know how to code — and honestly, I wasn't even sure I was 
-              interested in it. But I've always loved making (and breaking) things, poking around to see how they're built. 
+              When I enrolled in Computer Engineering, I didn&apos;t know how to code — and honestly, I wasn&apos;t even sure I was 
+              interested in it. But I&apos;ve always loved making (and breaking) things, poking around to see how they&apos;re built. 
               That instinct kicked in during the COVID lockdowns, when I started building small projects just for fun. One 
-              turned into another, then another — and I haven't stopped since.
+              turned into another, then another — and I haven&apos;t stopped since.
             </p>
             <p>
-              Over the past few years, I've also been helping out at my dad's software company — taking on small dev tasks, 
+              Over the past few years, I&apos;ve also been helping out at my dad&apos;s software company — taking on small dev tasks, 
               assisting with product ideas, and getting a real-world glimpse into running a tech business.
             </p>
             <p>
-              Now, I'm a fresh graduate from Humber College in Toronto. I take on freelance work, build full-stack apps for 
+              Now, I&apos;m a fresh graduate from Humber College in Toronto. I take on freelance work, build full-stack apps for 
               fun, and am looking for a role where I can keep learning and building cool things with great people.
             </p>
           </div>
