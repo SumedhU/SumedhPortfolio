@@ -1,0 +1,127 @@
+:root {
+    --pixel-size: 2px;
+    --grid-cell: calc(var(--pixel-size) * 32);
+    --bg: #9fa7e4;
+  }
+  
+  .pixel-art {
+    image-rendering: pixelated;
+  }
+  
+  .frame {
+    width: calc( 7 * var(--grid-cell));
+    display: flex;
+    justify-content: center;
+    height: calc(6 * var(--grid-cell));
+    z-index: 1;
+    position: relative;
+  }
+  
+  .camera {
+    width: calc( 7 * var(--grid-cell));
+    height: calc(6 * var(--grid-cell));
+    max-height: 100%;
+    outline: var(--pixel-size) solid #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .map {
+    image-rendering: pixelated;
+    background-image: url("/gameboy/Map.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc( 7 * var(--grid-cell));
+    height: calc(6 * var(--grid-cell));
+    position: relative;
+  }
+  
+  .character {
+    width: var(--grid-cell);
+    height: var(--grid-cell);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    animation: walkMovement 10s linear infinite;
+  }
+  
+  
+  .shadow {
+    width: var(--grid-cell);
+    height: var(--grid-cell);
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("/gameboy/Shadow.png") no-repeat;
+    image-rendering: pixelated;
+    background-size: cover;
+  }
+  
+  .character_spritesheet {
+    position: absolute;
+    top: 0;
+    background: url("/gameboy/SpriteSheet-Sumedh.png") no-repeat;
+    image-rendering: pixelated;
+    background-size: cover;
+    width: calc(var(--grid-cell) * 4);
+    height: calc(var(--grid-cell) * 4);
+    animation: walkAnimation 0.8s steps(4) infinite,
+    faceDirection 10s steps(1) infinite;
+
+  }
+  
+  
+  @keyframes walkAnimation {
+    from {
+      transform: translate3d(0%, 0%, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0%, 0);
+    }
+  }
+  
+  @keyframes walkMovement {
+    0% {
+      top: 0;
+      right: 0;
+    }
+    25% {
+      top: calc(var(--grid-cell) * 4.9); /* Move down */
+      right: 0; /* Move down */
+    }
+    50% {
+      top: calc(var(--grid-cell) * 4.9); /* Move down */   
+      right: calc(var(--grid-cell) * 6); /* Move left */
+    }
+    75% {
+      top: 0; /* Move up */
+      right: calc(var(--grid-cell) * 6);
+    }
+    100% {
+      top: 0;
+      right: 0; /* Move right (back to start) */
+    }
+  }
+
+  @keyframes faceDirection {
+    0% {
+      top: 0; /* face down */
+    }
+    25% {
+      top: -192px; /* face left */
+    }
+    50% {
+      top: -128px; /* face up */
+    }
+    75% {
+      top: -64px; /* face right */
+    }
+    100% {
+      top: 0; /* back to face down */
+    }
+  }
+  
+  
