@@ -1,8 +1,4 @@
-:root {
-    --pixel-size: 2px;
-    --grid-cell: calc(var(--pixel-size) * 32);
-    --bg: #9fa7e4;
-  }
+
   
   .pixel-art {
     image-rendering: pixelated;
