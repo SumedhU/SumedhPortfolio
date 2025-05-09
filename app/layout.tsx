@@ -12,7 +12,7 @@ export const metadata: Metadata = {
       'Sumedh Udar - Software developer, ui/ux enthusiast, and amateur cardist',
   },
   description:
-    'I\'m Sumedh, a software developer based in Toronto, ON.I enjoy combining packets in cardistry or components in development—making them work seamlessly together and optimizing where it\'s needed for maximum impact.',
+    'I\'m Sumedh, a software developer based in Toronto, ON. I enjoy combining packets in cardistry or components in development—making them work seamlessly together and optimizing where it\'s needed for maximum impact.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
